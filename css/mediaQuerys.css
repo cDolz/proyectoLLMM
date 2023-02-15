@@ -1,0 +1,746 @@
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 955px){
+    #menuMaximizado {
+        display: none;
+    }
+
+    #logo {
+        width: 11%;
+    }
+    #icons {
+        width: 7%;
+    }
+    #navegadorFixed {
+        height: 70px;
+    }
+    #barraBusqueda {
+        width: 82%;
+    }
+    #barraBusquedaDiv1 {
+        width: 10%;
+    }
+    #nav1 {
+        height: 60px;
+        background:none;
+    }
+    #nav1>ul {
+        font-size: 15px;
+        width: 50%;
+        background-color: #7474748e;
+        border-radius: 999px;
+    }
+    #banner {
+        height: 470px;
+    }
+    #banner a {
+        padding-left: 30px;
+    }
+    #banner a>p {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    #banner a div>div {
+        padding: 0px 15px 0px 10px;
+    }
+    #banner a div>p {
+        padding: 0px 0px 0px 24px;
+        font-size: 40px;
+    }
+    #banner2 {
+        display: flex;
+        height: 470px;
+        margin: 30px 0px 30px 0px;
+    }
+    #banner2 a {
+        padding-left: 30px;
+    }
+    #banner2 a>p {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    #banner2 a div>div {
+        padding: 0px 15px 0px 10px;
+    }
+    #banner2 a div>p {
+        padding: 0px 0px 0px 24px;
+        font-size: 40px;
+    }
+    #contenido h2 {
+        font-size: 23px;
+        padding: 20px 0px 20px 30px;
+    }
+    #submenuPC{
+        margin-top: 129px;
+        height: 130px;
+        width: 55%;
+        left: 22.5%;
+    }
+    #submenuPS{
+        margin-top: 129px;
+        height: 130px;
+        width: 55%;
+        left: 22.5%;
+    }
+    #submenuXbox{
+        margin-top: 129px;
+        height: 130px;
+        width: 55%;
+        left: 22.5%;
+    }
+    #submenuNintendo{
+        margin-top: 129px;
+        height: 130px;
+        width: 55%;
+        left: 22.5%;
+    }
+    #novedades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #novedades div .imagen {
+        height: 250px;
+    }
+    #novedades div .texto p:first-child {
+        font-size: 17px;
+        width: 83%;
+    }
+    #novedades div .texto p:last-child {
+        font-size: 19px;
+        width: 17%;
+    }
+    #reservas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #reservas .divReserva{
+        display: flex;
+    }
+    #reservas .divReserva2{
+        display: flex;
+    }
+    #reservas div .imagen {
+        height: 250px;
+    }
+    #reservas div .texto p:first-child {
+        font-size: 17px;
+        width: 83%;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 19px;
+        width: 17%;
+    }
+    #ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ofertas .divReserva{
+        display: flex;
+    }
+    #ofertas div .imagen {
+        height: 250px;
+    }
+    #ofertas div .texto p:first-child {
+        font-size: 17px;
+        width: 83%;
+    }
+    #ofertas div .texto p:last-child {
+        font-size: 19px;
+        width: 17%;
+    }
+    #resenhas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #resenhas>div {
+        height: 160px;
+    }
+    #resenhas .divReserva{
+        display: flex;
+    }
+    #resenhas .divReserva2{
+        display: flex;
+    }
+    #resenhas>div .cuadroExterior .parteArriba .estrellas p {
+        font-size: 14px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .opinion {
+        font-size: 16px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .timer {
+        font-size: 16px;
+    }
+    footer{
+        flex-flow: row wrap;
+    }
+    footer .enlaces{
+        width: 30%;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 30px;
+    }
+    footer .enlaces a:last-child {
+        padding-bottom: 30px;
+    }
+    footer .enlaces a {
+        font-size: 18px;
+    }
+    footer .redesSociales {
+        height: 45px;
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 863px) and (max-width: 954.9px){
+    #menuMaximizado {
+        display: none;
+    }
+    #logo {
+        width: 12%;
+    }
+    #icons {
+        width: 8%;
+    }
+    #barraBusqueda {
+        width: 80%;
+    }
+    #barraBusquedaDiv1 {
+        width: 10%;
+    }
+    #nav1>ul {
+        width: 47%;
+    }
+    #banner {
+        height: 360px;
+    }
+    #banner a>p {
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+    #banner a div>p {
+        padding: 0px 0px 0px 24px;
+        font-size: 30px;
+    }
+    #contenido h2 {
+        font-size: 19px;
+    }
+    #novedades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #novedades div .imagen {
+        height: 200px;
+    }
+    #novedades div .texto p:first-child {
+        width: 82%;
+    }
+    #novedades div .texto p:last-child {
+        width: 18%;
+    }
+    #reservas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #reservas .divReserva{
+        display: flex;
+    }
+    #reservas div .imagen {
+        height: 290px;
+    }
+    #reservas div .texto p:first-child {
+        font-size: 16px;
+        width: 86%;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 18px;
+        width: 14%;
+    }
+    #ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ofertas .divReserva{
+        display: flex;
+    }
+    #ofertas div .imagen {
+        height: 200px;
+    }
+    #ofertas div .texto p:first-child {
+        width: 82%;
+    }
+    #ofertas div .texto p:last-child {
+        width: 18%;
+    }
+    #resenhas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resenhas>div {
+        height: 160px;
+    }
+    #resenhas .divReserva{
+        display: flex;
+    }
+    #resenhas>div .cuadroExterior .parteArriba .estrellas p {
+        font-size: 14px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .opinion {
+        font-size: 16px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .timer {
+        font-size: 16px;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 30px;
+    }
+    footer .enlaces a:last-child {
+        padding-bottom: 30px;
+    }
+    footer .enlaces a {
+        font-size: 18px;
+    }
+    footer .redesSociales {
+        height: 45px;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 755px) and (max-width: 862.9px){
+    #menuMaximizado {
+        display: none;
+    }
+    #logo {
+        width: 13%;
+    }
+    #icons {
+        width: 9%;
+    }
+    #barraBusqueda {
+        width: 78%;
+    }
+    #barraBusquedaDiv1 {
+        width: 13%;
+    }
+    #nav1>ul {
+        width: 55%;
+    }
+    #banner {
+        height: 340px;
+    }
+    #banner a>p {
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+    #banner a div>p {
+        padding: 0px 0px 0px 24px;
+        font-size: 30px;
+    }
+    #contenido h2 {
+        font-size: 19px;
+    }
+    #novedades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #novedades div .imagen {
+        height: 185px;
+    }
+    #novedades div .texto p:first-child {
+        width: 82%;
+    }
+    #novedades div .texto p:last-child {
+        width: 18%;
+    }
+    #reservas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #reservas .divReserva{
+        display: flex;
+    }
+    #reservas div .imagen {
+        height: 275px;
+    }
+    #reservas div .texto p:first-child {
+        font-size: 16px;
+        width: 86%;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 18px;
+        width: 14%;
+    }
+    #ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ofertas .divReserva{
+        display: flex;
+    }
+    #ofertas div .imagen {
+        height: 185px;
+    }
+    #ofertas div .texto p:first-child {
+        width: 82%;
+    }
+    #ofertas div .texto p:last-child {
+        width: 18%;
+    }
+    #resenhas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resenhas>div {
+        height: 150px;
+    }
+    #resenhas .divReserva{
+        display: flex;
+    }
+    #resenhas>div .cuadroExterior .parteArriba .estrellas p {
+        font-size: 14px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .opinion {
+        font-size: 16px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .timer {
+        font-size: 16px;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 30px;
+    }
+    footer .enlaces a:last-child {
+        padding-bottom: 30px;
+    }
+    footer .enlaces a {
+        font-size: 18px;
+    }
+    footer .redesSociales {
+        height: 45px;
+        width: 32%;
+    }
+}
+@media screen and (min-width: 647px) and (max-width: 754.9px) {
+    #menuMaximizado {
+        display: none;
+    }
+    #logo {
+        width: 15%;
+    }
+    #icons {
+        width: 10%;
+    }
+    #barraBusqueda {
+        width: 75%;
+    }
+    #barraBusquedaDiv1 {
+        width: 15%;
+    }
+    #nav1>ul {
+        width: 62%;
+    }
+    #banner {
+        height: 310px;
+    }
+    #contenido h2 {
+        font-size: 18px;
+    }
+    #novedades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #reservas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #reservas .divReserva{
+        display: flex;
+    }
+    #reservas div .imagen {
+        height: 220px;
+    }
+    #reservas div .texto p:first-child {
+        font-size: 16px;
+        width: 82%;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 18px;
+        width: 18%;
+    }
+    #ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ofertas .divReserva{
+        display: flex;
+    }
+    #resenhas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resenhas .divReserva{
+        display: flex;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 30px;
+    }
+    
+    footer .enlaces a:last-child {
+        padding-bottom: 30px;
+    }
+    footer .redesSociales {
+        height: 45px;
+        width: 38%;
+    }
+}
+
+@media screen and (min-width: 555px) and (max-width: 646.9px) {
+    #menuMaximizado {
+        display: none;
+    }
+    #logo {
+        width: 16%;
+    }
+    #icons {
+        width: 12%;
+    }
+    #barraBusqueda {
+        width: 72%;
+    }
+    #barraBusquedaDiv1 {
+        width: 17%;
+    }
+    #nav1>ul {
+        width: 72%;
+    }
+    #banner {
+        height: 275px;
+    }
+    #contenido h2 {
+        font-size: 18px;
+    }
+    #novedades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #novedades div .imagen {
+        height: 150px;
+    }
+    #reservas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #reservas .divReserva{
+        display: flex;
+    }
+    #reservas div .imagen {
+        height: 210px;
+    }
+    #reservas div .texto p:first-child {
+        font-size: 16px;
+        width: 82%;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 18px;
+        width: 18%;
+    }
+    #ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ofertas .divReserva{
+        display: flex;
+    }
+    #ofertas div .imagen {
+        height: 150px;
+    }
+    #resenhas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #resenhas .divReserva{
+        display: flex;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 30px;
+    }
+    
+    footer .enlaces a:last-child {
+        padding-bottom: 30px;
+    }
+    footer .redesSociales {
+        height: 45px;
+        width: 43%;
+    }
+}
+
+@media screen and (min-width: 539px) and (max-width: 554.9px) {
+    #menuMaximizado {
+        display: none;
+    }
+    #nav1>ul>li {
+        font-size: 13px;
+    }
+    #banner {
+        height: 250px;
+    }
+    #reservas div .texto p:first-child {
+        width: 75%;
+    }
+    #novedades div .texto p:first-child {
+        width: 80%;
+    }
+    #novedades div .texto p:last-child {
+        width: 20%;
+    }
+    #ofertas div .texto p:first-child {
+        width: 80%;
+    }
+    #ofertas div .texto p:last-child {
+        width: 20%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 538.9px) {
+    #nav1>ul>li>span {
+        display: none;
+    }
+    #menuMaximizado {
+        display: none;
+    }
+    #barraBusqueda {
+        width: 67%;
+    }
+    #barraBusquedaDiv1 {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 399.9px){
+    #menuMaximizado {
+        display: none;
+    }
+    #nav1>ul>li>span {
+        display: none;
+    }
+    #navegadorFixed {
+        height: 50px;
+    }
+    #barraBusquedaDiv1 input {
+        font-size: 12px;
+    }
+    #barraBusquedaDiv2 span {
+        font-size: 20px;
+    }
+    #icons a span {
+        font-size: 28px;
+    }
+    #nav1 {
+        height: 28px;
+    }
+    #nav1>ul>li {
+        font-size: 13px;
+    }
+    #submenuPC{
+        margin-top: 77.5px;
+        height: 85px;
+    }
+    #submenuPS{
+        margin-top: 77.5px;
+        height: 85px;
+    }
+    #submenuXbox{
+        margin-top: 77.5px;
+        height: 85px;
+    }
+    #submenuNintendo{
+        margin-top: 77.5px;
+        height: 85px;
+    }
+    #submenuPC div a{
+        font-size: 11px;
+    }
+    #submenuPS div a{
+        font-size: 11px;
+    }
+    #submenuXbox div a{
+        font-size: 11px;
+    }
+    #submenuNintendo div a{
+        font-size: 11px;
+    }
+    #banner {
+        height: 200px;
+    }
+    #banner a {
+        padding-left: 15px;
+    }
+    #banner a>p {
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+    #banner a div>div {
+        font-size: 13px;
+        padding: 0px 5px 0px 1px;
+    }
+    #banner a div>p {
+        font-size: 19px;
+        padding: 0px 0px 0px 15px;
+    }
+    #contenido h2 {
+        font-size: 15px;
+        padding: 7px 0px 5px 14px;
+    }
+    #novedades div .imagen {
+        height: 135px;
+    }
+    #novedades div .texto p:first-child {
+        width: 76%;
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    #novedades div .texto p:last-child {
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+    #reservas div .imagen {
+        height: 90px;
+    }
+    #reservas div .texto p:first-child {
+        width: 68%;
+        font-size: 10px;
+        padding-bottom: 4px;
+    }
+    #reservas div .texto p:last-child {
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    
+    #ofertas div .imagen {
+        height: 135px;
+    }
+    #ofertas div .texto p:first-child {
+        width: 76%;
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    #ofertas div .texto p:last-child {
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+    #resenhas>div {
+        height: 100px;
+        margin: 15px 0 15px 0;
+    }
+    #resenhas>div .cuadroExterior .parteArriba .estrellas p {
+        font-size: 10px;
+    }
+    #resenhas>div .cuadroExterior .parteArriba .estrellas img {
+        padding-bottom: 0px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .opinion {
+        font-size: 12px;
+        padding: 10px 0px 5px 0px;
+    }
+    #resenhas>div .cuadroExterior .parteAbajo .timer {
+        font-size: 12px;
+    }
+    footer .enlaces a {
+        font-size: 14px;
+        padding: 2px 0px 2px 0px;
+    }
+    footer .enlaces a:first-child {
+        padding-top: 15px;
+    }
+    footer .enlaces a:last-child {
+        padding-bottom: 15px;
+    }
+    footer .redesSociales {
+        height: 31px;
+        width: 50%;
+    }
+    footer hr {
+        margin-top: 15px;
+    }
+    footer p {
+        font-size: 13px;
+        padding: 5px 0 5px 0;
+    }
+}

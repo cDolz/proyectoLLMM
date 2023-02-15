@@ -1,0 +1,489 @@
+/* Colores */
+/* verde claro #A1FEBB */
+/* verde oscuro #007120 */
+/* blanco apagado rgb(222, 222, 222) */
+
+/* Fuentes */
+/* font-family: 'Itim', Arial, Helvetica, sans-serif */
+/* font-family: 'Roboto', Arial, Helvetica, sans-serif */
+
+/* estilos generales */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* capa */
+
+#capa {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.7);
+    z-index: 4;
+}
+
+#header {
+    z-index: 5;
+}
+
+/* contenedor general */
+
+#contenedorGeneral {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column wrap;
+}
+
+/* navegador Fixed */
+
+#navegadorFixed {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(22, 22, 22);
+    flex-flow: row wrap;
+}
+
+/* logo */
+
+#logo {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a {
+    height: 93%;
+    width: 93%;
+    transition: all 300ms;
+}
+
+#logo a:hover {
+    height: 100%;
+    width: 100%;
+}
+
+#logo a img {
+    height: 100%;
+    width: 100%;
+}
+
+/* barra de busqueda */
+
+#barraBusqueda {
+    display: flex;
+    flex-flow: row wrap;
+    width: 67%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#barraBusquedaDiv1 {
+    height: 70%;
+    width: 20%;
+    background-color: #007120;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+}
+
+#barraBusquedaDiv1:hover {
+    cursor: pointer;
+}
+
+#barraBusquedaDiv1 span {
+    font-size: 25px;
+    color: rgb(222, 222, 222);
+}
+
+#barraBusquedaDiv1 input {
+    display: none;
+    font-size: 15px;
+    width: 94%;
+    height: 100%;
+    color: rgb(222, 222, 222);
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+#barraBusquedaDiv1 input::placeholder {
+    color: rgba(222, 222, 222, 0.8);
+}
+
+#barraBusquedaDiv2 {
+    width: 10%;
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#barraBusquedaDiv2 span {
+    font-size: 25px;
+    color: rgb(222, 222, 222);
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+#barraBusquedaDiv2 span:hover {
+    cursor: pointer;
+    color: #007120;
+}
+
+/* barra de iconos */
+
+#icons {
+    display: flex;
+    flex-flow: row wrap;
+    width: 15%;
+    height: 100%;
+}
+
+#icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+#icons a:first-child {
+    width: 40%;
+}
+
+#icons a:last-child {
+    width: 60%;
+}
+
+#icons a span {
+    font-size: 32px;
+    color: rgb(222, 222, 222);
+    transition: all 300ms;
+}
+
+#icons a:hover span {
+    color: #A1FEBB;
+    text-shadow: 0px 0px 3px #007120;
+}
+
+/* navegador 1 */
+
+#nav1 {
+    width: 100%;
+    height: 32px;
+    background-color: #7474748e;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 300ms ease-out;
+}
+
+#nav1>ul {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav1>ul>li {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+}
+
+#nav1>ul>li>span {
+    font-size: 14px;
+    color: rgba(222, 222, 222, 0.7);
+    padding-left: 10px;
+    transition: all 300ms;
+}
+
+#nav1>ul>li:hover {
+    cursor: pointer;
+}
+
+#nav1>ul>li:hover span {
+    color: rgb(222, 222, 222);
+    text-shadow: 0px 0px 3px rgb(222, 222, 222);
+}
+
+
+/* submenus */
+
+/* submenu PC */
+
+#submenuPC {
+    display: none;
+    margin-top: 92px;
+    left: 15%;
+    position: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    width: 70%;
+    background-color: rgba(184, 184, 184, 0.7);
+    border-radius: 15px;
+    z-index: 5;
+}
+
+#submenuPC div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#submenuPC div a {
+    font-size: 14px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+#submenuPC div a:hover {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
+/* submenu playstation */
+
+#submenuPS {
+    display: none;
+    margin-top: 92px;
+    left: 15%;
+    position: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    width: 70%;
+    background-color: rgba(184, 184, 184, 0.7);
+    border-radius: 15px;
+    z-index: 5;
+}
+
+#submenuPS div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#submenuPS div a {
+    font-size: 14px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+#submenuPS div a:hover {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
+/* submenu xbox */
+
+#submenuXbox {
+    display: none;
+    margin-top: 92px;
+    left: 15%;
+    position: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    width: 70%;
+    background-color: rgba(184, 184, 184, 0.7);
+    border-radius: 15px;
+    z-index: 5;
+}
+
+#submenuXbox div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#submenuXbox div a {
+    font-size: 14px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+#submenuXbox div a:hover {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
+/* submenu nintendo */
+
+#submenuNintendo {
+    display: none;
+    margin-top: 92px;
+    left: 15%;
+    position: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    width: 70%;
+    background-color: rgba(184, 184, 184, 0.7);
+    border-radius: 15px;
+    z-index: 5;
+}
+
+#submenuNintendo div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#submenuNintendo div a {
+    font-size: 14px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+#submenuNintendo div a:hover {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
+/* banner */
+
+#banner {
+    width: 100%;
+    height: 240px;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#banner a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: rgb(222, 222, 222);
+    padding-left: 20px;
+}
+
+#banner a>p {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+#banner a div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#banner a div>div {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 5px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #007120;
+    border-radius: 10px 50px 10px 10px;
+}
+
+#banner a div>p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+
+/* menuMaximizado */
+
+#menuMaximizado {
+    height: 100%;
+    width: 50%;
+    display: none;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms;
+}
+
+#menuMaximizado>li {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    color: rgb(222, 222, 222);
+}
+
+#menuMaximizado>li>span {
+    font-size: 14px;
+    color: rgba(222, 222, 222, 0.7);
+    padding-left: 10px;
+    transition: all 300ms;
+}
+
+#menuMaximizado>li:hover {
+    cursor: pointer;
+}
+
+#menuMaximizado>li:hover span {
+    color: rgb(222, 222, 222);
+    text-shadow: 0px 0px 3px rgb(222, 222, 222);
+}

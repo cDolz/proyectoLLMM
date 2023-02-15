@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>TitanGaming</title>
+    <link rel="stylesheet" type="text/css" href="css/styles&header.css">
+    <link rel="stylesheet" type="text/css" href="css/contenido.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQuerys.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div id="contenedorGeneral">
+        <div id="capa" onmouseenter="salirDeMenu()">
+        </div>
+        <div id="header">
+            <div id="navegadorFixed">
+                <div id="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="barraBusqueda" onmouseenter="salirDeMenu()">
+                    <ul id="menuMaximizado">
+                        <li onclick="desplegarSubmenu(1)">
+                            <p>PC</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(2)">
+                            <p>Playstation</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(3)">
+                            <p>Xbox</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(4)">
+                            <p>Nintendo</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                    </ul>
+                    <div id="barraBusquedaDiv1" onclick="desplegarBarraBusqueda()" onmouseover="barraBusquedaHover()"
+                        onmouseout="barraBusquedaOut()">
+                        <span id="barraBusquedaSpan" class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input id="barraBusquedaInput" type="text" placeholder="Videojuegos, ofertas, Game Pass..."
+                            onblur="replegarBarraBusqueda()">
+                    </div>
+                    <div id="barraBusquedaDiv2">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <div id="icons">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </div>
+                <div id="nav1">
+                    <ul>
+                        <li onclick="desplegarSubmenu(1)">
+                            <p>PC</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(2)">
+                            <p>Playstation</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(3)">
+                            <p>Xbox</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                        <li onclick="desplegarSubmenu(4)">
+                            <p>Nintendo</p>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="submenuPC">
+            <div>
+                <a href="">Steam</a>
+            </div>
+            <div>
+                <a href="">Battle.net</a>
+            </div>
+            <div>
+                <a href="">Microsoft Store</a>
+            </div>
+            <div>
+                <a href="">Ubisoft Connect</a>
+            </div>
+            <div>
+                <a href="">Rockstar</a>
+            </div>
+            <div>
+                <a href="">Epic</a>
+            </div>
+        </div>
+        <div id="submenuPS">
+            <div>
+                <a href="">Play Station 4</a>
+            </div>
+            <div>
+                <a href="">Play Station 5</a>
+            </div>
+            <div>
+                <a href="">Play Station Plus</a>
+            </div>
+            <div>
+                <a href="">Play Station Store</a>
+            </div>
+        </div>
+        <div id="submenuXbox">
+            <div>
+                <a href="">Xbox One</a>
+            </div>
+            <div>
+                <a href="">Xbox Series XIS</a>
+            </div>
+            <div>
+                <a href="">Xbox Live Gold</a>
+            </div>
+            <div>
+                <a href="">Xbox Game Pass</a>
+            </div>
+            <div>
+                <a href="">Xbox Gift Card</a>
+            </div>
+        </div>
+        <div id="submenuNintendo">
+            <div>
+                <a href="">Nintendo Switch</a>
+            </div>
+            <div>
+                <a href="">Nintendo eShop Cards</a>
+            </div>
+            <div>
+                <a href="">Nintendo Memberships</a>
+            </div>
+        </div>
+        <div id="banner">
+            <a href="#">
+                <p>Hogwarts Legacy</p>
+                <div>
+                    <div>
+                        -24%
+                    </div>
+                    <p>45,39€</p>
+                </div>
+            </a>
+        </div>
+        <div id="contenido">
+            <h2>Novedades</h2>
+            <div id="novedades">
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Reservas</h2>
+            <div id="reservas">
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div class="divReserva">
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div class="divReserva2">
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div class="divReserva2">
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+            </div>
+            <div id="banner2">
+                <a href="#">
+                    <p>Hogwarts Legacy</p>
+                    <div>
+                        <div>
+                            -24%
+                        </div>
+                        <p>45,39€</p>
+                    </div>
+                </a>
+            </div>
+            <h2>Ofertas</h2>
+            <div id="ofertas">
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/hogwartslegacy.jpg" alt="">
+                            <video src="video/hogwartslegacy.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>hogwarts Legacy</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div class="divReserva">
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/godofwar.jpg" alt="">
+                            <video src="video/godofwar.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>God of War: Ragnarok</p>
+                        <p>56,99€</p>
+                    </div>
+                </div>
+                <div class="divReserva">
+                    <div class="imagen">
+                        <a href="#">
+                            <img src="img/eldenring.jpg" alt="">
+                            <video src="video/eldenring.mp4" autoplay loop muted></video>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <p>Elden Ring</p>
+                        <p>53,99€</p>
+                    </div>
+                </div>
+            </div>
+            <div id="resenhas">
+                <div>
+                    <div class="cuadroExterior">
+                        <div class="parteArriba">
+                            <a href="">
+                                <img src="img/cr7.jpg" alt="">
+                            </a>
+                            <div class="estrellas">
+                                <img src="img/stars-rating2.svg" alt="">
+                                <p>God of War:...</p>
+                            </div>
+                        </div>
+                        <div class="parteAbajo">
+                            <p class="opinion">buen juego</p>
+                            <p class="timer">Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cuadroExterior">
+                        <div class="parteArriba">
+                            <a href="">
+                                <img src="img/cr7.jpg" alt="">
+                            </a>
+                            <div class="estrellas">
+                                <img src="img/stars-rating2.svg" alt="">
+                                <p>God of War:...</p>
+                            </div>
+                        </div>
+                        <div class="parteAbajo">
+                            <p class="opinion">buen juego</p>
+                            <p class="timer">Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cuadroExterior">
+                        <div class="parteArriba">
+                            <a href="">
+                                <img src="img/cr7.jpg" alt="">
+                            </a>
+                            <div class="estrellas">
+                                <img src="img/stars-rating2.svg" alt="">
+                                <p>God of War:...</p>
+                            </div>
+                        </div>
+                        <div class="parteAbajo">
+                            <p class="opinion">buen juego</p>
+                            <p class="timer">Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divReserva">
+                    <div class="cuadroExterior">
+                        <div class="parteArriba">
+                            <a href="">
+                                <img src="img/cr7.jpg" alt="">
+                            </a>
+                            <div class="estrellas">
+                                <img src="img/stars-rating2.svg" alt="">
+                                <p>God of War:...</p>
+                            </div>
+                        </div>
+                        <div class="parteAbajo">
+                            <p class="opinion">buen juego</p>
+                            <p class="timer">Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divReserva2">
+                    <div class="cuadroExterior">
+                        <div class="parteArriba">
+                            <a href="">
+                                <img src="img/cr7.jpg" alt="">
+                            </a>
+                            <div class="estrellas">
+                                <img src="img/stars-rating2.svg" alt="">
+                                <p>God of War:...</p>
+                            </div>
+                        </div>
+                        <div class="parteAbajo">
+                            <p class="opinion">buen juego</p>
+                            <p class="timer">Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="enlaces">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="redesSociales">
+                <div>
+                    <a href="" id="enlaceTwitter">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" id="enlaceInstagram">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" id="enlaceFacebook">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" id="enlaceYoutube">
+                        <img src="img/youtbe.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" id="enlaceTwitch">
+                        <img src="img/twitch.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2023 Carlos Dolz Martín - All rights reserved</p>
+        </footer>
+    </div>
+    <script src="js/transitions.js" type="text/javascript"></script>
+</body>
+
+</html>
